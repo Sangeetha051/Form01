@@ -1,0 +1,82 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+#form_one{
+	width: 325px;
+    margin: 20px auto 0px;
+    border: solid 2px #FF5252;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #FF5252;
+}
+#form_one h1{
+	text-align: center;
+    color: #fff;
+    margin-bottom: 0px;
+}
+fieldset{
+	border: none;
+    position: relative;
+    margin-top: 10px;
+    padding-top: 25px;
+    padding-bottom: 0px;
+}
+fieldset:last-of-type{
+	margin-top: 10px;
+    padding-top: 0px;
+    margin-bottom: 30px;
+}
+fieldset:first-of-type{
+	margin-top: 0px;
+}
+/*
+fieldset.show{
+	padding-top: 30px;
+}
+*/
+fieldset label{
+    font-size: 14px;
+    position: absolute;
+    font-weight: bold;
+    top: 38px;
+    left: 24px;
+    color: #FF5252;
+    transition-property: top;
+    transition-duration: .5s;
+    -webkit-transition-property: top;
+    -webkit-transition-duration: .5s;
+}
+fieldset input[type='text'],
+fieldset input[type='email'],
+fieldset input[type='tel'],
+fieldset textarea{
+	outline: none;
+    border: solid 2px #FF5252;
+    padding: 10px;
+	width: 95%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #999;
+}
+fieldset textarea{
+	resize: none;
+}
+fieldset input.form-el:focus + label,
+fieldset textarea.form-el:focus + label{
+	top: 0px;
+    color: #fff;
+    left: 12px;
+    font-weight: bold;
+    font-size: 14px;
+}
+#form_one input[type='submit']{
+	background: #fff;
+    color: #FF5252;
+    border: solid 1px #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 15px;
+	outline: none;
+	display: block;
+	margin: 0 auto;
+}
